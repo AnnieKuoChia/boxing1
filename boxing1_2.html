@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>認識盒子模型</title>
+    <style>
+      h1, p, div {
+        background-color: #eee;
+        display: inline;
+      }
+
+      em, a {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>這是 h1 元素，佔滿一整個橫列，所以是 block 排列方式，但因為display設定為inline，所以block元素會像inline元素排列</h1>
+    <div>這是 div 元素，也佔滿一整個橫列。</div>
+    <p>這是段落 (p) 元素，也是 block。但在段落裡的 <em>inline 元素</em>，則順應 block 元素的排列，不會影響到網頁整體的排版。</p>
+    <a href="#">網頁連結（a 元素）也是 inline。</a>
+    <p>在 inline 後面的 block 元素還是會另起一行。</p>
+  </body>
+</html>
